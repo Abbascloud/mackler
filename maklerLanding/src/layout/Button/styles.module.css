@@ -1,0 +1,24 @@
+.button {
+   padding: 4pt 12pt;
+   font-size: 9pt;
+   border: 2pt solid rgb(255 221 45);
+   border-radius: 17pt;
+   cursor: pointer;
+}
+
+.primary {
+   background-color: rgb(255 221 45);
+   color: rgb(34 34 34);
+   box-shadow: 0pt 10pt 14pt 1pt rgba(255, 221, 45, 0.26);
+
+}
+
+.secondary {
+   background: none;
+   color: rgb(255 255 255);
+   background: rgb(72 58 58 / 50%);
+}
+
+.disabled {
+   cursor: not-allowed;
+}

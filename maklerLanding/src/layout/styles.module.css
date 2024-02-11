@@ -1,0 +1,270 @@
+.topBG {
+    background-image: url('../assets/background/header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19pt 0;
+}
+
+.title {
+    padding: 25pt 0 35pt;
+
+}
+
+.title h1 {
+    font-size: 24pt;
+    margin: 6.5pt 0 12pt 0;
+}
+
+.title ul {
+    list-style: none;
+}
+
+.title ul li {
+    display: flex;
+    align-items: center;
+    gap: 4pt;
+}
+
+.title ul li span {
+    animation-name: dotAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    display: block;
+    border-radius: 50%;
+    background-color: red;
+
+
+}
+
+@keyframes dotAnimation {
+    from {
+        -moz-box-shadow: 0 0 0 #000;
+        -webkit-box-shadow: 0 0 0 #000;
+        box-shadow: 0 0 0 red;
+    }
+
+    50% {
+        -moz-box-shadow: 0 0 3px 3px #ff3000;
+        -webkit-box-shadow: 0 0 3px 3px #ff3000;
+        box-shadow: 0 0 3px 3px #ff3000;
+    }
+
+    to {
+        -moz-box-shadow: 0 0 0 #000;
+        -webkit-box-shadow: 0 0 0 #000;
+        box-shadow: 0 0 0 red;
+    }
+}
+
+.title p {
+    width: 214pt;
+    font-size: 9pt;
+    margin-bottom: 21pt;
+}
+
+.warning {
+    border-radius: 12pt;
+    padding: 30pt 60pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20pt;
+    background-image: url('../assets/background/stairwayBG.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.warning h3 {
+    font-size: 20px;
+}
+
+.warning p {
+    text-align: center;
+    font-size: 8.5pt;
+}
+
+.about {
+    text-align: center;
+    padding: 32pt 0 55pt 0;
+}
+
+.about h3 {
+    font-size: 18pt;
+
+}
+
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 13.5pt 0 55pt;
+    gap: 43pt;
+}
+
+.cards {
+    padding-bottom: 53pt;
+
+}
+
+.cards h3 {
+    text-align: center;
+    font-size: 18pt;
+    margin-bottom: 30pt;
+}
+
+.cardsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 62pt;
+    row-gap: 23.5pt;
+}
+
+
+
+.frame {
+    min-height: 213pt;
+    background-image: url('../assets/background/frame.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+
+    padding: 37pt 0 25pt;
+}
+
+.frame h3 {
+    margin: 31pt 0 10pt;
+}
+
+.frame p {
+    font-size: 11.5pt;
+}
+
+.frame button {
+    margin-top: 27pt;
+}
+
+
+.numericCards {
+    padding: 68pt 0 55pt;
+}
+
+.numericCards h3 {
+    margin-bottom: 53pt;
+}
+
+.comments h3 {
+    margin-bottom: 64pt;
+}
+
+.commentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15pt;
+}
+
+.formWrapper {
+    padding-bottom: 50pt;
+    padding-top: 40px;
+}
+
+.formWrapper h4 {
+    font-size: 13.5pt;
+}
+
+.formFlex {
+    display: flex;
+    justify-content: center;
+    gap: 122pt;
+    padding-top: 43pt;
+}
+
+.formTitle {
+    padding-top: 10pt;
+}
+
+.formTitle h4 {
+    font-size: 14pt;
+    margin-bottom: 10pt;
+    text-align: end;
+}
+
+.formTitle p {
+    font-size: 10pt;
+    text-align: end;
+}
+
+.form h4 {
+    font-size: 15pt;
+    margin-bottom: 24pt;
+    text-align: center;
+}
+
+.footer {
+    padding: 68pt 0 14pt;
+
+}
+
+.footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .copyright {
+    opacity: 0.2;
+    text-align: center;
+    color: rgba(255 255 255);
+    font-size: 7pt;
+    margin-top: 48pt;
+}
+
+.footerBG {
+    background-image: url('../assets/background/footer.png');
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-position-y: 131px;
+
+}
+
+@media screen and (max-width:760px) {
+    .formFlex {
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .formTitle h4 {
+
+        text-align: center;
+    }
+
+    .formTitle p {
+        font-size: 10pt;
+        text-align: center;
+    }
+
+    .cardsGrid {
+        grid-template-columns: 1fr;
+        width: auto;
+        height: auto;
+    }
+
+    .aboutGrid {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media screen and (max-width:550px) {
+    .commentGrid {
+        grid-template-columns: 1fr;
+    }
+}
