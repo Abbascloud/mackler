@@ -1,0 +1,118 @@
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+.dot {
+    height: 9pt;
+    width: 9pt;
+    background-color: white;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 6;
+}
+
+.table h4 {
+    font-size: 12.5pt;
+    line-height: 12pt;
+    margin-bottom: 11.5pt;
+}
+
+.table p {
+    flex-shrink: 0;
+    font-size: 9pt;
+    white-space: pre-wrap;
+}
+
+.dotContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.textContent {
+    width: 300pt;
+    flex-shrink: 0;
+    padding-bottom: 30pt;
+}
+
+@media screen and (max-width:760px) {
+    .textContent {
+        width: auto;
+    }
+
+    .table p {
+        white-space: initial;
+    }
+}
+
+.top {
+    position: absolute;
+    z-index: 6;
+    width: 1px;
+    left: 33%;
+}
+
+.top div {
+    position: absolute;
+    top: 0;
+    box-shadow: -1px -4px 17px 7px #ffd700;
+    background: #ffd700;
+    transform-origin: 0%;
+    z-index: 5;
+    border-radius: 8px;
+    width: 4px;
+    height: 100%;
+    transform-origin: top;
+}
+
+
+
+
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.tableWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56pt;
+    margin-bottom: 56pt;
+}
+
+.animate {
+    background-color: #ffd700;
+    animation: pulsing 5s;
+    animation-iteration-count: infinite;
+    box-shadow: -1px -4px 17px 7px #ffd700;
+}
+
+
+
+
+@keyframes pulsing {
+    0% {
+        -webkit-box-shadow: 0px 0px 20px 5px #ffd700;
+        -moz-box-shadow: 0px 0px 20px 5px #ffd700;
+        box-shadow: 0px 0px 20px 5px #ffd700;
+    }
+
+    50% {
+        -webkit-box-shadow: 0px 0px 20px 12px #ffd700;
+        -moz-box-shadow: 0px 0px 20px 12px #ffd700;
+        box-shadow: 0px 0px 20px 12px #ffd700;
+    }
+
+    100% {
+        -webkit-box-shadow: 0px 0px 20px 5px #ffd700;
+        -moz-box-shadow: 0px 0px 20px 5px #ffd700;
+        box-shadow: 0px 0px 20px 5px #ffd700;
+    }
+
+}
